@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Estilo css -->
+    <link rel="stylesheet" type="text/css" href="Css/estilo.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d7233e63f2.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="Js/oculta.js"></script>
+
+    <title>Simpala Financeira</title>
+  </head>
+  <body>
+      
+      <!-- Header -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h3>Simpala Financeira</h3>
+            <img src="img/logotipo.png" width="350px">
+          </div>
+        </nav>
+
+        <nav class="navbar-transparente">
+          <ul class="steps">
+            <li class="step-on">
+            <div class="step">1</div>
+              <span>VEÍCULO</span>
+            </li>
+            <li class="step-on">
+            <div class="step">2</div>
+              <span>SIMULAÇÃO</span>
+            </li>
+            <li class="step-on1" id="texto">
+            <div class="step">3</div>
+              <span>DOCUMENTAÇÃO</span>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-principal2">
+            <h3>Queremos conhecer o cliente</h3>
+        </div>
+
+      </header><!--/ header -->
+
+      <section class="row"><!-- Formulário -->
+
+        <div class="container2">
+
+        <form>
+          <h2 class="titulo3">INFORMAÇÕES PESSOAIS</h2>
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NOME </h2>
+             <div class="formulario" id="caixa">
+                <input type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome completo">
+                <div class="underline3"></div>
+              </div>
+
+         
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> E-MAIL </h2>
+           <div class="formulario" id="caixa1">
+              <input type="text"
+              name="email"
+              id="email"
+              placeholder="nome@email.com">
+              <div class="underline2"></div>
+            </div>
+           
+          <h2 class="titulo2"><i class="fas fa-asterisk"></i> TELEFONE CELULAR</h2>
+            <div class="formulario">
+              <input type="text"
+                name="telefone"
+              id="telefone"
+              placeholder="(00) 0000-0000">
+              <div class="underline2"></div>
+            </div>
+
+          <div id="documento2"> 
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i>  TIPO DE DOCUMENTO </h2> 
+            <div class="formulario">
+              <select name="documento" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+          </div>
+
+          <div id="documento">
+            <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NÚMERO DO DOCUMENTO</h2>
+            <div class="formulario">
+                <input type="text"
+                name="numero"
+                id="numero"
+                placeholder="Digite">
+                <div class="underline"></div>
+            </div>
+          </div>
+
+          <div class="orgao" id="documento2">
+            <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> ORGÃO EMISSOR </h2>
+            <div class="formulario">
+                <input type="text"
+                name="orgao"
+                id="orgao"
+                placeholder="Digite">
+            <div class="underline2"></div>
+           </div>
+          </div>
+
+          <div id="emissor">
+            <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> UF ORGÃO EMISSOR </h2> 
+                <div class="formulario">
+                <select name="uf orgao" id="selecione">
+                  <option value="Selecione">Selecione</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+              </select>
+                <div class="underline"></div>
+              </div>
+          </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> DATA DE EMISSÃO </h2>
+            <div class="formulario">
+              <input type="text"
+              name="data emissao"
+              id="data-emissao"
+              placeholder="dd/mm/aaaa">
+              <div class="underline2"></div>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> SEXO </h2> 
+            <div class="formulario">
+                <select name="sexo" id="selecione">
+                  <option value="Selecione">Selecione</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                </select>
+                <div class="underline2"></div>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NACIONALIDADE </h2> 
+            <div class="formulario">
+              <select name="naturalidade" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+
+          <div id="documento2">   
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> UF DA NATURALIDADE </h2> 
+            <div class="formulario">
+              <select name="uf naturalidade" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+          </div>
+
+          <div id="emissor">
+            <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NATURALIDADE(CIDADE) </h2> 
+                <div class="formulario">
+                  <select name="naturalidade" id="selecione">
+                    <option value="Selecione">Selecione</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</option>
+                    <option value="opcao">opcao</0option>
+                    <option value="opcao">opcao</option>
+                  </select>
+                <div class="underline"></div>
+              </div>
+          </div>
+
+          <div id="documento2">
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> PATRIMÔNIO </h2>
+            <div class="formulario">
+              <input type="text"
+              name="patrimonio"
+              id="patrimonio"
+              placeholder="R$">
+              <div class="underline2"></div>
+            </div>
+          </div>
+
+          <div id="documento">
+             <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> RENDA MENSAL </h2>
+             <div class="formulario">
+                <input type="text"
+                name="renda"
+                id="renda"
+                placeholder="R$">
+                <div class="underline"></div>
+              </div>
+          </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> CARGO / FUNÇÃO </h2> 
+            <div class="formulario">
+              <select name="cargo" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> ESTADO CIVIL </h2> 
+            <div class="formulario">
+              <select name="civil" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NOME DA MÃE </h2>
+            <div class="formulario" id="caixa">
+              <input type="text"
+              name="nome mae"
+              id="nome-mae"
+              placeholder="Nome completo">
+              <div class="underline3"></div>
+            </div>
+
+
+          <h2  id="residenciais" class="titulo3">INFORMAÇÕES RESIDENCIAIS </h2>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> CEP <a href="">Não sabe o cep?</a><i id="cep-icon" class="fas fa-info-circle"></i></h2>
+              <div class="formulario">
+                <input type="text"
+                name="cep"
+                id="cep"
+                placeholder="Digite">
+                <div class="underline2"></div>
+              </div>
+
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> ENDEREÇO </h2>
+             <div class="formulario" id="caixa">
+                <input type="text"
+                name="endereco"
+                id="endereco"
+                placeholder="Digite">
+              <div class="underline3"></div>
+            </div>
+
+          <div id="documento2">
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NÚMERO </h2>
+            <div class="formulario">
+                <input type="text"
+                  name="numero"
+                  id="numero"
+                  placeholder="Digite">
+               <div class="underline2"></div>
+            </div>
+          </div>
+            
+          <div id="documento">
+             <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> COMPLEMENTO </h2>
+             <div class="formulario">
+                <input type="text"
+                name="complemento"
+                id="complemento"
+                placeholder="Digite">
+                <div class="underline"></div>
+             </div>
+          </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> BAIRRO </h2>
+             <div class="formulario" id="caixa">
+                <input type="text"
+                name="bairro"
+                id="bairro"
+                placeholder="Digite">
+               <div class="underline3"></div>
+              </div>
+
+          <div id="documento2">
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> ESTADO </h2> 
+            <div class="formulario">
+              <select name="estado" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div> 
+          </div>  
+
+
+          <div id="emissor">
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> CIDADE </h2> 
+              <div class="formulario">
+                <select name="cidade" id="selecione">
+                  <option value="Selecione">Selecione</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                  <option value="opcao">opcao</option>
+                </select>
+              <div class="underline"></div>
+            </div>
+          </div>
+
+          <div id="agente">
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> NOME AGENTE CERTIFICADO </h2> 
+            <div class="formulario">
+              <select name="agente" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+               </select>
+            <div class="underline2"></div>
+          </div>    
+
+            <div id="proposta">
+              <button role="button" class="botao2" onclick="location.href=''" type="button">
+                Enviar proposta
+                <i class="fas fa-angle-double-right"></i>
+              </button>
+
+              <button type="button" onclick="location.href='simulador.html'"  class="voltar">
+                <i class="fas fa-chevron-left fa-xs"></i>
+                  Voltar
+              </button>
+            </div>
+        </form>
+        </div>
+      </section><!-- / Formulário-->
+
+      <!-- Footer -->
+      <footer>
+        
+        <div id="container-rodape" style="clear: both;">
+          <div id="rodape">
+
+            <h1><i class="fas fa-phone"></i> 
+              LIGUE AGORA (51) 3535-3310 <br>
+              Endereço: Av. Ipiranga, 6500 - Jardim Botânico, Porto Alegre - RS, 90160-092
+            </h1>
+
+            <h1>
+              &copy; Copyright 2021 Todos os Direitos Reservados 
+            </h1>
+
+          </div>
+        </div>
+      </footer><!--/ Footer -->
+
+
+   <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+  </body>
+</html>

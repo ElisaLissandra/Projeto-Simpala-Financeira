@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Estilo css -->
+    <link rel="stylesheet" type="text/css" href="Css/estilo.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d7233e63f2.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="Js/oculta.js"></script>
+
+    <title>Simpala Financeira</title>
+  </head>
+  <body>
+      
+      <!-- Header -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h3>Simpala Financeira</h3>
+            <img src="img/logotipo.png" width="350px">
+          </div>
+        </nav>
+
+         <nav class="navbar-transparente">
+          <ul class="steps">
+            <li class="step-on">
+            <div class="step">1</div>
+              <span>VEÍCULO</span>
+            </li>
+            <li class="step-on1" id="texto">
+            <div class="step">2</div>
+              <span>SIMULAÇÃO</span>
+            </li>
+            <li class="step-on">
+            <div class="step">3</div>
+              <span>DOCUMENTAÇÃO</span>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-principal2">
+            <h3>Simulação</h3>
+        </div>
+
+      </header><!--/ header -->
+
+      <section class="d-flex"><!-- Formulário -->
+
+        <div class="container2">
+
+        <form>
+          <h2 class="titulo3">PAGAMENTO</h2>
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> DATA DE PAGAMENTO <i class="fas fa-info-circle"></i> <i class="far fa-calendar-alt"></i></h2>
+           <div class="formulario">
+              <input type="text"
+              name="data depagamento"
+              id="data_de_pagamento"
+              placeholder="dd/mm/aaaa">
+              <div class="underline2"></div>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> FORMA DE PAGAMENTO <i class="fas fa-info-circle"></i> </h2>
+            <div class="formulario">
+              <select name="pagamento" id="selecione">
+                <option value="selecione">Selecione</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+                <option value="opcao">opcao</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+
+            <div class="titulo3" id="info">
+              <h2> OUTRAS INFORMAÇÕES </h2>
+            </div>
+            <div id="oculta" class="informacao">
+               <h1 class="titulo2">DETALHE DE FINANCIAMENTO</h1>
+              <i class="far fa-file-alt fa-lg"></i><a href=""><b> CET - CUSTO EFETIVO TOTAL</b></a>
+              <br>
+              <hr width = “3” size = “100”>
+
+              <h1 class="titulo2">PROTEÇÃO FINANCEIRA</h1>
+
+              <input class="radio" type="radio" name="protegido" value="valor t"><b> CDC PROTEGIDO VALOR TOTAL</b> <br>
+
+              <input class="radio" type="radio" name="protegido"  value="desemprego" onclick="aviso('protegido')"><b> CDC PROTEGIDO COM DESEMPREGO</b> <br>
+              <div id="protegido">
+                <p>
+                   O  CDC PROTEGIDO VALOR COM DESEMPREGO tem por  objetivo a proteção do seguro para as coberturas de morte e invalidez permanente total por acidente (IPTA) limitado ao saldo devedor do financiamento de até R$...() além das coberturasde desemprego involuntário(DI) e invalidez física temporária por acidente (IFTA), com o pagamento de até 3 (TRÊS) parcelas do saldo devedor do financiamento com is limitada à um valor total de R$...()
+                </p>
+              </div>
+
+              <input class="radio" type="radio" name="protegido" value="sem seguro"><b> SEM SEGURO</b> <br>
+
+              <hr width = “3” size = “100”>
+
+              <h1 class="titulo2">TARIFA DE CADASTRO (TC)</h1>
+              
+              <input id="checkbox" type="checkbox" name="isencao"><b> ISENÇÃO TC</b>
+              <p class="p">
+                Ao optar pela isenção de Tarifa de Cadastro, o cliente deverá apresentar a documentação para isenção. Esta documentação deverá ser apresentada ao Simpala Financiamentos no momento da contratação do financiamento.
+              </p>
+          
+              <input id="checkbox" type="checkbox" name="isencao"><b> PAGAMENTO TC À VISTA</b>
+              <p class="p">
+                Ao optar pelo pagamento à vista da Tarifa de Cadastramento o logista deverá imprimir o boleto de pagamento, após a apovação do crédito e entregar ao cliente. O cliente deverá efetuar o pagamento até o prazo de vencimento.
+
+                Importante: a solicitação de pagamento de financiamento somente estará disponível após o prazo de comprensação do boleto que é aproximadamente (DIAS ÚTEIS), e em caso de pagamento em cheque, o prazo para a compensação é de no mínimo (DIAS ÚTEIS). 
+                </p>
+            </div>
+
+            <div id="oculta">
+              <button type="button" onclick="mudarEstado('oculta')">
+                <i class="fas fa-sort-down fa-2x"></i>
+              </button>
+            </div>
+
+          <h2 class="titulo2"><i class="fas fa-asterisk fa-xs"></i> FROTA </h2> 
+            <div class="formulario">
+              <select name="frota" id="selecione">
+                <option value="Selecione">Selecione</option>
+                <option value="opcao">Frota 3</option>
+                <option value="opcao">Frota 2</option>
+                <option value="opcao">Frota 1</option>
+                <option value="opcao">Frota 0</option>
+              </select>
+              <div class="underline2"></div>
+            </div>
+
+            <div id="aplicar">
+              <button role="button"  class="botao2" onclick="location.href='documentacao.html'"type="button">
+                Aplicar
+              </button>
+           </div>
+        </form>
+        </div>
+      </section><!-- / Formulário-->
+
+      <!-- Footer -->
+      <footer>
+        
+        <div id="container-rodape" style="clear: both;">
+          <div id="rodape">
+
+            <h1><i class="fas fa-phone"></i> 
+              LIGUE AGORA (51) 3535-3310 <br>
+              Endereço: Av. Ipiranga, 6500 - Jardim Botânico, Porto Alegre - RS, 90160-092
+            </h1>
+
+            <h1>
+              &copy; Copyright 2021 Todos os Direitos Reservados 
+            </h1>
+
+          </div>
+        </div>
+      </footer><!--/ Footer -->
+
+
+   <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+  </body>
+</html>

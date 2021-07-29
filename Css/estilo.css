@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Limpando formatação padrão */
+*{margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body{
+	font-family: "Poppins", sans-serif;
+	background: #122d77;
+	overflow-x: hidden;
+	min-height: 100%;
+}
+
+/* Topo */
+ 
+.navbar {
+	height: 170px;
+	width: 100%;
+	background: white;
+	box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar .logo {
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: left;
+	text-indent: -3000px;
+}
+
+.nav-principal1 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 60px; 
+	margin-bottom: 30px;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.nav-principal2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 60px; 
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+/*Barra de navegação */
+
+.steps {
+   height: 40px;
+   padding-right: 0;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-pack: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.steps li {
+	list-style-type: none;
+	width: 33.333%;
+	float: left;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.steps li .step {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	background-color: transparent;
+	border: 1px solid #120a8f;
+	color: #120a8f;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	margin-right: 5px;
+	top: -1px;
+	margin-top: 15px;
+}
+
+.steps li span {
+	color: #120a8f;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 35px;
+	text-decoration: none;
+}
+
+.step-on {
+	background: #f5f5f5;
+}
+
+.step-on1{
+
+	background: transparent;
+}
+
+#texto .step {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	background-color: transparent;
+	border: 1px solid #ffd700;
+	color: #ffd700;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	margin-right: 5px;
+	top: -1px;
+	margin-top: 15px;
+
+}
+
+#texto span {
+	color: #ffd700;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 35px;
+	text-decoration: none;
+}
+
+
+
+/* Loyout */
+
+.container1 {
+	width: 100%;
+	max-width:450px;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	padding: 15px;
+	background: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 20px 20px 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+.container2 {
+	width: 100%;
+	max-width: 730px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	padding: 15px;
+	background: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 20px 20px 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Formatação geral */
+
+.titulo {
+	margin-bottom: 20px;
+	margin-left: 17px;
+	margin-top: 25px;
+}
+
+.titulo2{
+	margin-bottom: 15px;
+	margin-left: 17px;
+	margin-top: 25px;
+	font-size: 1.0em;
+}
+
+.titulo3{
+	margin-bottom: 15px;
+	margin-left: 17px;
+	margin-top: 25px;
+	font-size: 1.4em;
+}
+
+
+h3{
+	font-size: 1.8em;
+	color: #cfa750;
+	font-weight: bolder;
+}
+
+h2{
+	font-size: 1.1em;
+	font-weight: bolder;
+}
+
+h1 {
+	font-size: 1.0em;
+	font-weight: bolder;
+}
+
+/* Formatação formulário */
+
+.formulario {
+	position: relative;
+	margin-bottom: 1.0px;
+	margin-left: 20px;
+}
+
+.formulario input{
+	outline: none;
+	font-size:20px;
+	border: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.formulario .underline{
+	content: '' ;
+	position: absolute;
+	height: 1.5px;
+	width: 80%;
+	bottom: -5px;
+	left: 0;
+	background:rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+
+.formulario .underline2{
+	content: '' ;
+	position: absolute;
+	height: 1.5px;
+	width: 50%;
+	bottom: -5px;
+	left: 0;
+	background:rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.formulario input placeholder{
+	font-size: 1.0em;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.botao1 {
+	background: #122d77;
+	border-radius: 20px;
+	border: none;
+	color:  #cfa750;
+	padding: 10px 20px;
+	margin-left: 50px;
+	margin-top: 60px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.botao2 {
+	background: #122d77;
+	border-radius: 20px;
+	border: none;
+	color:  #cfa750;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+   margin-bottom: 10px;
+   margin-top: 25px;
+   margin-left: 60%;
+}
+
+.radio {
+	margin: 6px;
+	padding-top: 25px;
+}
+
+#checkbox {
+	margin: 25px 5px 10px 20px;
+}
+
+#selecione {
+	width: 50%;
+	overflow: hidden;
+	height: 40px;
+	font-size: 18px;
+	padding: 10px 95px;
+	margin: 8px 0;
+	text-overflow: "";
+	border: none;
+	color: rgba(0, 0, 0, 0.7);
+	outline: none;
+	margin-top: -15px;
+	padding-left: 5px;
+}
+
+.fas fa-info-circle, .far fa-calendar-alt{
+	display: inline-block;
+}
+
+.informacao {
+	background: #E8E8E8;
+	display: none;
+}
+
+.informacao: hover {
+	display: block;
+}
+
+#info{
+	background: #E8E8E8;
+	height: 90px;
+	width: 85%;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#info h2{
+	padding-top: 25px;
+  text-align: center;
+}
+
+
+/* Formatação barra oculta */
+
+#oculta {
+	width: 85%;
+	margin-left: 30px;
+	margin-top: -25px;
+	margin-bottom: 75px;
+}
+
+
+#oculta a{
+	text-decoration: none;
+	margin-left: 5px;
+	color: #00008B;
+	font-size: 0.9em;
+}
+
+#oculta i:before{
+	text-align: right;
+	margin-left: 15px;
+	margin-top: 10px;
+	color:  #122d77;
+}
+
+
+#oculta hr {
+	margin-top: 20px;
+	
+}
+
+#oculta input {
+	transform: scale(1.5);
+	margin-left: 18px;
+}
+
+#oculta button{
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	float: right;
+	margin-left: 50px;
+	margin-right: 10px;
+	margin-top: -45px;
+}
+
+
+#protegido {
+	margin-left: 15px;
+	margin-right: 15px;
+	display: none;
+}
+
+#protegido: hover{
+	display: block;
+}
+
+#protegido p{
+	margin-left: 25px;
+	margin-right: 20px;
+}
+
+.p {
+ 	margin-left: 40px;
+ 	margin-right: 20px;
+ 	padding-bottom: 10px;
+}
+
+
+/* Demais Formatações */
+
+#aplicar {
+	margin-top: -70px;
+	margin-left: 15px;
+}
+
+
+#documento{
+	float: right;
+	margin-top: -90px;
+	margin-right: 10%;
+	margin-left: 200px;
+}
+
+#documento2{
+	margin-right: 150px;
+	
+}
+
+#documento .underline{
+	content: '' ;
+	position: absolute;
+	height: 1.5px;
+	width:  90%;
+	bottom: -5px;
+	left: 0;
+	background:rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#emissor {
+	float: right;
+	margin-top: -98px;
+	margin-right: 11%;
+}
+
+#emissor .underline{
+	content: '' ;
+	position: absolute;
+	height: 1.5px;
+	width: 95%;
+	bottom: -5px;
+	left: 0;
+	background:rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#emissor #selecione{
+	width: 220px;
+	overflow: hidden;
+	height: 40px;
+	font-size: 18px;
+	padding: 10px 55px;
+	margin: 8px 0;
+	text-overflow: "";
+	border: none;
+	color: rgba(0, 0, 0, 0.7);
+	outline: none;
+	margin-top: -15px;
+	padding-left: 5px;
+}
+
+.orgao{
+	margin-top: 40px;
+}
+
+.underline3{
+	content: '' ;
+	position: absolute;
+	height: 1.5px;
+	width: 85%;
+	bottom: -5px;
+	left: 0;
+	background:rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#caixa1 input{
+	width: 50%;
+}
+
+#caixa input{
+	width: 85%;
+}
+
+#cep-icon {
+	display: inline-flex;
+	margin-left: 13px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.titulo2 a {
+	margin-left: 160px;
+	text-decoration: none;
+	color: #00008B;
+	font-size: 0.9em;
+}
+
+#residenciais {
+	margin-top: 80px;
+}
+
+#agente {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	background: #E8E8E8;
+	height: 250px;
+	padding-top: 20px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+#agente #selecione {
+	background: #E8E8E8;
+	width: 50%;
+}
+
+#proposta {
+	padding-top: 50px;
+	margin-left: -170px;
+}
+
+.voltar{
+	float: left;
+	margin-left: 250px;
+	margin-top: -45px;
+	border-radius: 4px;
+	border: none;
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+	background: transparent;
+}
+
+
+/* Formatação rodapé */
+
+#container-rodape {
+	background: white;
+	padding: 20px;
+	box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+	width: 100%;
+	bottom: 0;
+	position: relative;
+
+}
+
+#rodape{
+	color:  #122d77;
+	padding-top: -30px;
+	text-align: left;
+	width: 100%;
+}
+
+
